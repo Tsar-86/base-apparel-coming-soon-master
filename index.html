@@ -19,11 +19,17 @@
           <br>S O O N<br />
         </h1>
 
-        <p>Hello fellow shoppers! We're currently building our    new fashion store. 
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
            Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <div class="input">
-          <input id="email__input" type="button" value="">
-          <button id="email__button"></button>
+          <input id="email" name="email" type="text">
+          <button id="email__button">
+            <i id="arrow"></i>
+          </button>
+        </div>
+
+        <div id="error">
+          <p id="error__text">Please provide a valide email</p>
         </div>
         
       </div>
@@ -31,13 +37,10 @@
   
   
     <div class="picture__card">
-      <img src="images/hero-desktop.jpg" width="610" height="800" alt="hero">
+      <img id='hero' src="images/hero-desktop.jpg" alt="hero">
     </div>
   
-  <!-- <img src="images/icon-arrow.svg" alt="arrow">
-  <img src="images/icon-error.svg" alt="error"> -->
-  
   </div>
-  
+  <script src="/script.js"></script>
 </body>
 </html>

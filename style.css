@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-* {
-	box-sizing: border-box;
-}
-
 body {
 	display: flex;
 	justify-content: center;
@@ -18,12 +14,13 @@ body {
 
 h1 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 60px;
+	font-size: 3.5em;
 	width: 500px;
+	margin: 0;
 }
 
 #we__are {
-	color: hsl(0, 74%, 74%);
+	color: hsl(0, 44%, 64%);
 	font-weight: 300;
 }
 
@@ -31,29 +28,88 @@ img {
 	max-height: 100vh;
 }
 
+#hero {
+	display: block;
+	max-height: 100vh;
+}
+
 .left__card {
-	margin: 60px 160px;
+	margin: 3em 12em 2em 12.3em;
 }
 
 .text__card {
-	margin-top: 100px;
+	margin-top: 5em;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	height: 8em;
+	width: 28em;
+	line-height: 1.8em;
+	font-size: 0.92em;
+	color:hsl(0, 44%, 64%);
+}
+
+.input > #email__button {
+	position: absolute;
+	justify-content: center;
+
 }
 
 #email__input {
-	width: 400px;
-	height: 55px;
+	width: 415px;
+	height: 51px;
 	border-radius: 2em;
 	border: 2px solid silver;
 	background-color: #fff;
+	padding: 0px 0px 0px 30px;
+	font-size: 0.95em;
+	font-family: 'Josefin Sans', sans-serif;
+	color: hsl(0, 0%, 40%);
+}
+
+#email__input:hover {
+	border: 2px solid red;
+
+}
+
+.input {
+	display: flex;
+	width: 415px;
+	justify-content: flex-end;
 }
 
 #email__button {
-	position: absolute;
-	top: 472px;
-	left: 500px;
+	display: flex;
+	align-items: center;
 	width: 90px;
 	height: 55px;
 	border: 1px solid silver;
 	border-radius: 2em;
 	background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+#arrow {
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	padding: 2.4px;
+	transform: rotate(315deg);
+	margin: 0px 0px 3px 5px;
+	width: 0.5em;
+	height: 0.5em;
+  }
+
+  #email__button:hover {
+	border: hsl(0, 80%, 86%);
+	background: linear-gradient(to right, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+	box-shadow: hsl(0, 74%, 74%) 0px 0px 0px 0px, hsl(0, 74%, 74%) 0px 10px 20px 0px;
+}
+
+#error__text {
+	display: none;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 2em;
+	font-size: 0.82em;
+	color:hsl(0, 74%, 74%);
+	margin: 0.5em 3em;
 }
