@@ -39,14 +39,26 @@
 // messageFunction();
 
 
-let ValidMail = () => {
-    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
-    let myMail = document.getElementById('email').value;
-    let valid = re.test(myMail);
-    if (valid) output = 'Адрес эл. почты введен правильно!';
-    else output = 'Адрес электронной почты введен неправильно!';
-    document.getElementById('message').innerHTML = output;
-    return valid;
-} 
+// let ValidMail = () => {
+//     let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+//     let myMail = document.getElementById('email').value;
+//     let valid = re.test(myMail);
+//     if (valid) output = 'Адрес эл. почты введен правильно!';
+//     else output = 'Адрес электронной почты введен неправильно!';
+//     document.getElementById('message').innerHTML = output;
+//     return valid;
+// } 
 
-ValidMail();
+// ValidMail();
+
+// let email = document.getElementById("email");
+
+// let regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+
+
+// if (regexEmail.test(email.value)) {
+//     alert("It's Okay")
+// } else {
+//     alert("Not Okay")
+
+// }
